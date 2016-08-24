@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:id="@+id/scrollviewdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/customalert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="NO RECORDS FOUND"
+                android:textColor="#444444"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ok_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/customalert"
+                android:background="@android:color/transparent"
+                android:text="OK"
+                android:textColor="#e87b1e" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

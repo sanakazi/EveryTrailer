@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_white_36dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/notification_drawer"
+            android:icon="@drawable/ic_notifications_white_36dp"
+            android:title="Notification" />
+        <item
+            android:id="@+id/news_drawer"
+            android:icon="@drawable/ic_comment_white_36dp"
+            android:title="News" />
+        <item
+            android:id="@+id/featured_drawer"
+            android:icon="@drawable/featured_icon"
+            android:title="Featured"
+            android:visible="false" />
+        <item
+            android:id="@+id/Topten_drawer"
+            android:icon="@drawable/topten_icon"
+            android:title="Top 10"
+            android:visible="false" />
+        <item
+            android:id="@+id/recentadded_drawer"
+            android:icon="@drawable/recentlyadded_icon"
+            android:title="Recently Added"
+            android:visible="false" />
+        <item
+            android:id="@+id/nowshowing_drawer"
+            android:icon="@drawable/nowshowing_icon"
+            android:title="Now Showing"
+            android:visible="false" />
+        <item
+            android:id="@+id/Comingsoon_drawer"
+            android:icon="@drawable/commingsoon_icon"
+            android:title="Coming Soon"
+            android:visible="false" />
+        <item
+            android:id="@+id/allfims_drawer"
+            android:icon="@drawable/allfilms_icon"
+            android:title="All Films"
+            android:visible="false" />
+        <item
+            android:id="@+id/settings_drawer"
+            android:icon="@drawable/ic_settings_white_36dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/signout_drawer"
+            android:icon="@drawable/ic_power_settings_new_white_36dp"
+            android:title="Sign Out" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

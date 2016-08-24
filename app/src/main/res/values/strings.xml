@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EveryTrailer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1653602988260664</string>
+
+    <string name="TWITTER_KEY">1rympJnO8rLdQJv1lFiRkUlCt</string>
+    <string name="TWITTER_SECRET">KJnfZJyHn4Na2dAoz15HZNW8xAjucYmwyi4qjRo8PKNhGxzBbJ</string>
+
+</resources>

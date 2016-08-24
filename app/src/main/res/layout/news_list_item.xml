@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/news_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/news_img">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="This is Photoshop's version of Lorem Ipsum. "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/news_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_title"
+            android:gravity="left"
+            android:text="We broke EXCLUSIVE coverage that Akshay Kumar will be paired opposite Eshaa Gupta in 'Rustom'. And as we promised we have brought you another EXCLUSIVE piece of news from same film today."
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/news_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_desc"
+            android:text="Kinky Little Boots  |  1hr ago"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="gone">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbaryoutubeactivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/actionbar_bg"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.AppBarOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/liner123"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="none">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- SYNOPSIS -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cornershape"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Synopsis"
+                        android:textColor="#424242"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/videoliketxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toStartOf="@+id/textView2"
+                        android:drawableLeft="@drawable/ic_thumb_up_black_24dp_unselected"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="123456"
+                        android:textColor="#424242"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="123456"
+                        android:textColor="#424242"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Synopsistxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/videoliketxt"
+                        android:layout_marginTop="10dp"
+                        android:text="Thanks for a quick answer. So your suggestion would be, for example, to instantiate those row views programatically inside the Scrollview one by one?"
+                        android:textColor="#424242" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/Synopsistxt"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#eeeded"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <!-- WILL GO -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/imagelikeup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar_willgo"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="@dimen/progressbar_size"
+                                    android:layout_height="@dimen/progressbar_size"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:padding="10dp"
+                                    android:progress="0"
+                                    android:progressDrawable="@drawable/style_circular_fill_green"
+                                    android:secondaryProgress="100" />
+
+                                <ImageView
+                                    android:id="@+id/will_go_image"
+                                    android:layout_width="@dimen/icon_size"
+                                    android:layout_height="@dimen/icon_size"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/will_go" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/like_up"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/willgotxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Will Go"
+                                android:textColor="#01b36a" />
+
+                            <TextView
+                                android:id="@+id/willgotxtcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#01b36a" />
+                        </LinearLayout>
+
+                        <!-- MAYBE-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/imagemaybe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar_maybe"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="@dimen/progressbar_size"
+                                    android:layout_height="@dimen/progressbar_size"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:padding="10dp"
+                                    android:progress="0"
+                                    android:progressDrawable="@drawable/style_circular_fill_orange"
+                                    android:secondaryProgress="100" />
+
+                                <ImageView
+                                    android:id="@+id/maybe_image"
+                                    android:layout_width="@dimen/icon_size"
+                                    android:layout_height="@dimen/icon_size"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/maybe_icon" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/may_be"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/maybetxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="May Be"
+                                android:textColor="#fd8a2d" />
+
+                            <TextView
+                                android:id="@+id/maybetxtcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#fd8a2d" />
+                        </LinearLayout>
+
+                        <!-- WONT GO -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/imagewillnot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar_wontgo"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="@dimen/progressbar_size"
+                                    android:layout_height="@dimen/progressbar_size"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:padding="10dp"
+                                    android:progress="0"
+                                    android:progressDrawable="@drawable/style_circular_fill_red"
+                                    android:secondaryProgress="100" />
+
+                                <ImageView
+                                    android:id="@+id/wont_go_image"
+                                    android:layout_width="@dimen/icon_size"
+                                    android:layout_height="@dimen/icon_size"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/wont_go" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/dislike"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/wontgotxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Won't Go"
+                                android:textColor="#ff4545" />
+
+                            <TextView
+                                android:id="@+id/wontgotxtcount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#ff4545" />
+                        </LinearLayout>
+
+                        <!-- BUY TICKETS-->
+                        <LinearLayout
+                            android:id="@+id/linerbook"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar_buyTickets"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="@dimen/progressbar_size"
+                                    android:layout_height="@dimen/progressbar_size"
+                                    android:layout_gravity="center"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:padding="10dp"
+                                    android:progress="100"
+                                    android:progressDrawable="@drawable/style_circular_fill"
+                                    android:secondaryProgress="100" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/icon_size"
+                                    android:layout_height="@dimen/icon_size"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/but_ticket" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/book_image"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Buy Ticket"
+                                android:textColor="#231f20" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#231f20" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- RATING -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cornershape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textviewrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/comments_profile_pic"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/actionbar_bg" />
+
+                        <EditText
+                            android:id="@+id/comments_add_comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/comments_send"
+                            android:layout_toRightOf="@+id/comments_profile_pic"
+                            android:background="@android:color/transparent"
+                            android:hint="Add a comment.."
+                            android:padding="10dp"
+                            android:singleLine="true" />
+
+                        <ImageButton
+                            android:id="@+id/comments_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_send_black_36dp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#acacac" />
+
+                    <LinearLayout
+                        android:id="@+id/linrev"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textviewcmt"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/morereviewlink"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/linrev"
+                        android:drawableBottom="@drawable/more_reviews_down_arrow"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="More Comments"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!-- DIALOGUE PROMO -->
+
+                <LinearLayout
+                    android:id="@+id/dialog_promo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cornershape"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Dialogue Promo"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <org.lucasr.twowayview.TwoWayView
+                        android:id="@+id/dialog_promo"
+                        style="@style/TwoWayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawSelectorOnTop="false"
+                        android:focusable="false" />
+
+                </LinearLayout>
+
+                <!-- RELATED PROMO -->
+
+                <LinearLayout
+                    android:id="@+id/related_promo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cornershape"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Related Promos"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <org.lucasr.twowayview.TwoWayView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/related_promo"
+                        style="@style/TwoWayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawSelectorOnTop="false"
+                        android:focusable="false"
+                        tools:context=".MainActivity" />
+
+                </LinearLayout>
+
+                <!-- VIDEO ANALYTICS -->
+
+                <LinearLayout
+                    android:id="@+id/video_analytics_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cornershape"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video Analytics"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <!-- HIGHER -->
+
+                        <LinearLayout
+                            android:id="@+id/video_analytics_high_container"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trailer views higher then this video."
+                                android:textColor="#424242"
+                                android:textSize="14sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+                                <ImageView
+                                    android:id="@+id/video_analytics_img_high"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:padding="30dp"
+                                    android:src="@drawable/play" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:background="#90000000"
+                                    android:padding="3dp">
+
+                                    <TextView
+                                        android:id="@+id/video_analytics_likes_high"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_favorite_white_18dp"
+                                        android:drawablePadding="5dp"
+                                        android:gravity="center_vertical"
+                                        android:text=""
+                                        android:textColor="#ffffff"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/video_analytics_views_high"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_visibility_white_18dp"
+                                        android:drawablePadding="5dp"
+                                        android:text=""
+                                        android:textColor="#ffffff"
+                                        android:textSize="10sp" />
+                                </RelativeLayout>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/video_analytics_title_high"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <!-- LOWER -->
+
+                        <LinearLayout
+                            android:id="@+id/video_analytics_low_container"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trailer views lower then this video."
+                                android:textColor="#424242"
+                                android:textSize="14sp" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+                                <ImageView
+                                    android:id="@+id/video_analytics_img_low"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/talvar_bg" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:padding="30dp"
+                                    android:src="@drawable/play" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:background="#90000000"
+                                    android:padding="3dp">
+
+                                    <TextView
+                                        android:id="@+id/video_analytics_likes_low"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_favorite_white_18dp"
+                                        android:drawablePadding="5dp"
+                                        android:gravity="center_vertical"
+                                        android:text="96%"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/video_analytics_views_low"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:drawableLeft="@drawable/ic_visibility_white_18dp"
+                                        android:drawablePadding="5dp"
+                                        android:text="123456"
+                                        android:textColor="#ffffff"
+                                        android:textSize="10sp" />
+                                </RelativeLayout>
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/video_analytics_title_low"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shaandaar Official Trailer | Irrfan Khan, Konkona Sen Sharma, Neeraj Kabi"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
